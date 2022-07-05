@@ -135,3 +135,371 @@
    </script>
  </body>
 </html>
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+   --teal: #14FFEC;
+   --charcoal: #323232;
+   --purple: #5280e2;
+   --green: #15cdcb;
+
+
+   --fundo: #000000; 
+   --entrecont: #1572A1;
+   --red: #FF0000; 
+   --letra: #FFFFFF;
+   --titulos:#08ECFB;
+   --linhasf1: #06FF00;
+   --linhasf2: #FCD900;
+   --quadros: #222831;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   margin: 0;
+   background: var(--fundo);
+}
+
+body, button, input, select, textarea {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   color: white;
+}
+
+h1, h2 {
+   margin: 0;
+   font-weight: 400;
+}
+
+p {
+   font-size: 20px;
+   line-height: 23px;
+   text-align: justify;
+}
+
+button {
+   background: var(--entrecont);
+   border: 0;
+   border-radius: 15px;
+   padding: 8px 32px;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   top: 20px;
+   width: 400px;
+   margin: 0 auto;
+   /* text-align: center; */
+   /* left: 20px; */
+   /* width: 20px; */
+   /* height: 60px;  */
+}
+
+/* .button-cur {
+   text-align: center;
+}
+   position: absolute; */
+   /* height: 10px; */
+ /* .title-port{
+   color: var(--titulos);
+   font-size: 40px;
+   position: center;
+
+
+/* muda a fonte dos h1 com a classe 'title-purple' */
+.title-purple {
+   color: var(--titulos);
+   font-size: 48px;
+}
+
+/* muda a fonte dos h1 com a classe 'title-green' */
+.title-green {
+   color: var(--teal);
+   font-size: 48px;
+   text-align: center;
+}
+
+header {
+   height: calc(100vh - 65px);
+   display: flex;
+   align-items: center;
+}
+
+header .container {
+   height: fit-content;
+   padding: 0 100px;
+}
+
+/* remove a logo quando for desktop */
+header .container img {
+   display: none; 
+}
+
+header .container button {
+   margin-top: 40px;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 75px;
+   padding: 0 100px;
+   position: sticky;
+   top: 0;
+   background-color: var(--fundo);
+   z-index: 1;
+   /* sobrepor todos os outros elementos */
+}
+
+nav img {
+   height: 26px;
+}
+
+nav ul a {
+   color: var(--teal);
+   font-size: 20px;
+   text-decoration: none;
+   margin: 0 35px;
+}
+
+nav ul a svg {
+   display: none;
+}
+
+.about-me {
+   display: flex;
+   padding: 100px;
+}
+
+.about-me .container {
+   width: 50%;
+   padding-right: 50px;
+}
+
+.about-me .img-container {
+   width: 50%;
+   text-align: center;
+   position: relative;
+}
+
+.about-me .img-container img {
+   width: 50%;
+   height: 75%;
+}
+
+.container .portifolio-img{
+   margin: 125px ; 
+   height: 70%;
+   width: 80%;
+   padding: 10%;
+}
+
+.portifolio{
+   text-align: center;
+   padding: 10px;
+   width: 50%;
+   height: 50%;
+}
+
+.about-me .img-container .line {
+   width: calc(60% + 50px);
+   height: calc(80% + 40px);
+   border: 1px solid var(--linhasf2);
+   position: absolute;
+   top: -25px;
+   left: calc(50% - 60%/2 - 25px);
+}
+
+.about-me .img-container .line.green {
+   transform: rotate(-4.3deg);
+   border-color: var(--linhasf1);
+}
+
+.servicos {
+   text-align: center;
+   margin: 150px 0;
+   padding: 0 100px;
+}
+
+.servicos-container {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 60px auto 0;
+   border-radius: 0%;
+}
+
+.servicos .servicos-container .retangulo-servico {
+   max-width: 360px;
+   background: var(--charcoal);
+   border: 1px solid var(--teal);
+   border-radius: 0px;
+   padding: 40px 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+}
+
+.servicos .servicos-container .retangulo-servico svg {
+   position: relative;
+   margin-bottom: 40px;
+   color: var(--titulos);
+   height: 40px;
+   width: 60px;
+   /* centralizar o svg dentro do circulo */
+   top: calc(50% - 20px);
+}
+
+.servicos .servicos-container .retangulo-servico p {
+   text-align: center;
+   color: lightgrey;
+   font-size: 18px;
+}
+
+.servicos .servicos-container .retangulo-servico h2 {
+   margin-top: 10%;
+   font-size: 24px;
+}
+
+.servicos .servicos-container .retangulo-servico .circle-container {
+   border-radius: 40px;
+   height: 80px;
+   width: 80px;
+   background-color: var(--black);
+}
+
+.curriculo {
+   text-align: center;
+   padding: 0 100px;
+}
+
+.curriculo .container {
+   max-width: 1200px;
+   display: flex;
+   margin: 50px auto;
+}
+
+.curriculo .container .conteudo {
+   width: 100%;
+   display: flex;
+   text-align: left;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.curriculo .container img {
+   width: 30%;
+   text-align: center;
+   position: relative;
+}
+
+.curriculo .container .conteudo .curriculo-text {
+   display: grid;
+   grid-gap: 1rem;
+   grid-template-columns: 150px auto;
+   margin-bottom: 50px;
+}
+
+.curriculo .curriculo-text {
+   font-size: 16px;
+}
+
+.contato {
+   max-width: 700px;
+   margin: 150px auto 70px;
+   text-align: center;
+   padding: 0 20px;
+}
+
+.contato h1 {
+   width: fit-content;
+   margin: 0 auto 40px;
+}
+
+.contato p {
+   text-align: center;
+}
+
+.contato button {
+   margin: 40px auto;
+}
+
+.contato .social-media {
+   max-width: 360px;
+   margin: 50px auto 0;
+   justify-content: space-around;
+   display: flex;
+}
+
+.contato .social-media svg {
+   color: var(--teal);
+   height: 40px;
+   width: 50px;
+}
+
+footer p {
+   text-align: center;
+   color: lightgrey;
+   font-size: 18px;
+}
+
+/* <------------- Responsividade -------------> */
+
+/* retira a margim do 'nav ul a', pois ela atrapalha quebrando muito facil */
+nav ul {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+/* Suporte para tablets */
+@media (max-width:767px) {
+   header .container{
+       width: 100%;
+   }
+
+   header .container img{
+       display: inline;
+       height: 55px;
+       margin-bottom: 75px;
+   }
+
+   nav img{
+       display: none;
+   }
+}
+
+/* Suporte para celulares (com tela abaixo de 480px) */
+@media (max-width: 480px) {
+   header .container {
+       padding: 0 40px;
+   }
+
+   nav {
+       position: fixed;
+       width: 100%;
+       bottom: 0;
+       top: unset;
+       padding: 0 15px;
+   }
+
+   nav ul a {
+       font-size: 12px;
+   }
+
+   nav ul a svg {
+       display: block;
+       margin: 0 auto 10px;
+   }
+}
